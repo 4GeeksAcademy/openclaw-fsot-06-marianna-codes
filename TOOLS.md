@@ -13,6 +13,8 @@
 ## Cómo llamar a Zapier
 
 - Usa `mcporter` con el servidor `zapier` (configuración en `config/`).
+- `mcporter` **no está instalado globalmente**: ejecútalo siempre con `npx -y mcporter ...` y **desde** `~/.openclaw/workspace`, para que lea la configuración de `config/`. Ejemplo para comprobar la conexión: `cd ~/.openclaw/workspace && npx -y mcporter list zapier`.
+- No digas que Zapier "no está disponible" sin haber probado antes con `npx -y mcporter`.
 - Antes de ejecutar una acción, usa `inspect_zapier_actions` para obtener el `tool_name` y los parámetros exactos. No adivines nombres de acciones.
 - Para crear: `execute_zapier_write_action`.
 - La cuenta conectada (por defecto) es la **cuenta de pruebas** `mimo.pruebas.cuao@gmail.com`. No uses otra.
